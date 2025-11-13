@@ -2,10 +2,8 @@ import {Link} from 'react-router-dom';
 import {AppRoute} from '../../const.ts';
 import {Offer} from '../../types/offer';
 import PlaceCard from '../../components/place-card/place-card.tsx';
-
-type FavoritesScreenProps = {
-  offers: Offer[];
-};
+import {useAppSelector} from '../../hooks';
+import {selectOffers} from '../../store/selectors.ts';
 
 type FavoritesByCity = Record<string, Offer[]>;
 
@@ -14,7 +12,8 @@ const groupOffersByCity = (favoriteOffers: Offer[]): FavoritesByCity => favorite
   [offer.city.name]: [...(accumulator[offer.city.name] ?? []), offer],
 }), {});
 
-export default function FavoritesScreen({offers}: FavoritesScreenProps) {
+export default function FavoritesScreen() {
+  const offers = useAppSelector(selectOffers);
   const favoriteOffers = offers.filter((offer) => offer.isFavorite);
   const groupedOffers = groupOffersByCity(favoriteOffers);
   const cities = Object.keys(groupedOffers);

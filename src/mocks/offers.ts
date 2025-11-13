@@ -1,3 +1,4 @@
+import {CITY_MAP} from '../const.ts';
 import {Offer} from '../types/offer.ts';
 
 export const offers: Offer[] = [
@@ -16,17 +17,10 @@ export const offers: Offer[] = [
       'https://14.design.htmlacademy.pro/static/hotel/15.jpg',
       'https://14.design.htmlacademy.pro/static/hotel/17.jpg'
     ],
-    city: {
-      name: 'Amsterdam',
-      location: {
-        latitude: 52.37454,
-        longitude: 4.897976,
-        zoom: 13
-      }
-    },
+    city: CITY_MAP.Paris,
     location: {
-      latitude: 52.3909553943508,
-      longitude: 4.85309666406198,
+      latitude: 48.85761,
+      longitude: 2.358499,
       zoom: 16
     },
     goods: [
@@ -61,17 +55,10 @@ export const offers: Offer[] = [
       'https://14.design.htmlacademy.pro/static/hotel/11.jpg',
       'https://14.design.htmlacademy.pro/static/hotel/7.jpg'
     ],
-    city: {
-      name: 'Amsterdam',
-      location: {
-        latitude: 52.37454,
-        longitude: 4.897976,
-        zoom: 13
-      }
-    },
+    city: CITY_MAP.Cologne,
     location: {
-      latitude: 52.3609553943508,
-      longitude: 4.85309666406198,
+      latitude: 50.939361,
+      longitude: 6.969974,
       zoom: 16
     },
     goods: [
@@ -109,17 +96,10 @@ export const offers: Offer[] = [
       'https://14.design.htmlacademy.pro/static/hotel/2.jpg',
       'https://14.design.htmlacademy.pro/static/hotel/16.jpg'
     ],
-    city: {
-      name: 'Amsterdam',
-      location: {
-        latitude: 52.37454,
-        longitude: 4.897976,
-        zoom: 1
-      }
-    },
+    city: CITY_MAP.Brussels,
     location: {
-      latitude: 52.3909553943508,
-      longitude: 4.929309666406198,
+      latitude: 50.856557,
+      longitude: 4.361697,
       zoom: 16
     },
     goods: [
@@ -154,14 +134,7 @@ export const offers: Offer[] = [
       'https://14.design.htmlacademy.pro/static/hotel/18.jpg',
       'https://14.design.htmlacademy.pro/static/hotel/3.jpg'
     ],
-    city: {
-      name: 'Amsterdam',
-      location: {
-        latitude: 52.37454,
-        longitude: 4.897976,
-        zoom: 13
-      }
-    },
+    city: CITY_MAP.Amsterdam,
     location: {
       latitude: 52.3909553943508,
       longitude: 4.939309666406198,
@@ -185,5 +158,82 @@ export const offers: Offer[] = [
     rating: 4.4,
     bedrooms: 2,
     maxAdults: 9
+  },
+  {
+    id: '0af3d9e5-70b2-4f89-9c66-6578718ab2bd',
+    title: 'Canal view studio',
+    description: 'Cozy studio with canal view, modern amenities and a short walk to museums.',
+    type: 'apartment',
+    price: 180,
+    previewImage: 'https://14.design.htmlacademy.pro/static/hotel/8.jpg',
+    images: [
+      'https://14.design.htmlacademy.pro/static/hotel/3.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/8.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/6.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/17.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/10.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/9.jpg'
+    ],
+    city: CITY_MAP.Hamburg,
+    location: {
+      latitude: 53.555341,
+      longitude: 10.005654,
+      zoom: 16
+    },
+    goods: [
+      'Wi-Fi',
+      'Washer',
+      'Coffee machine',
+      'Towels',
+      'Cable TV'
+    ],
+    host: {
+      isPro: false,
+      name: 'Max',
+      avatarUrl: 'https://14.design.htmlacademy.pro/static/host/avatar-max.jpg'
+    },
+    isPremium: false,
+    isFavorite: true,
+    rating: 4.8,
+    bedrooms: 1,
+    maxAdults: 2
+  },
+  {
+    id: '4cdd715a-7504-4ab2-bcd3-4b4a7cd7f96f',
+    title: 'Riverside loft',
+    description: 'Light loft with panoramic windows and private workspace, close to the Rhine embankment.',
+    type: 'apartment',
+    price: 145,
+    previewImage: 'https://14.design.htmlacademy.pro/static/hotel/18.jpg',
+    images: [
+      'https://14.design.htmlacademy.pro/static/hotel/12.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/1.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/13.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/2.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/18.jpg',
+      'https://14.design.htmlacademy.pro/static/hotel/14.jpg'
+    ],
+    city: CITY_MAP.Dusseldorf,
+    location: {
+      latitude: 51.235402,
+      longitude: 6.786314,
+      zoom: 16
+    },
+    goods: [
+      'Air conditioning',
+      'Laptop friendly workspace',
+      'Washer',
+      'Breakfast'
+    ],
+    host: {
+      isPro: true,
+      name: 'Klaus',
+      avatarUrl: 'https://14.design.htmlacademy.pro/static/host/avatar-angelina.jpg'
+    },
+    isPremium: false,
+    isFavorite: false,
+    rating: 4.1,
+    bedrooms: 2,
+    maxAdults: 4
   }
 ];
